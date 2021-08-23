@@ -1,70 +1,26 @@
-package br.com.fiap.aso.ifood.asoifoodapi.domain;
+package br.com.fiap.aso.ifood.asoifoodapi.dto;
 
 import java.util.Calendar;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+public class MerchantDetailDto {
 
-@Entity(name = "MERCHANT")
-public class Merchant {
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "ID")
 	private Long id;
-
-	@Column(name = "NAME")
 	private String name;
-
-	@Column(name = "CORPORATE_NAME")
 	private String corporateName;
-
-	@Column(name = "DESCRIPTION")
 	private String description;
-
-	@Column(name = "AVERAGE_TICKET")
 	private Double averageTicket;
-
-	@Column(name = "EXCLUSIVE")
 	private String exclusive;
-
-	@Column(name = "TYPE")
 	private String type;
-
-	@Column(name = "STATUS")
 	private String status;
-
-	@Column(name = "CREATED_AT")
 	private Calendar createdAt;
-
-	@Column(name = "ADDRESS_COUNTRY")
 	private String country;
-
-	@Column(name = "ADDRESS_STATE")
 	private String state;
-
-	@Column(name = "ADDRESS_CITY")
 	private String city;
-
-	@Column(name = "ADDRESS_POSTAL_CODE")
 	private String postalCode;
-
-	@Column(name = "ADDRESS_DISTRICT")
 	private String district;
-
-	@Column(name = "ADDRESS_STREET")
 	private String street;
-
-	@Column(name = "ADDRESS_NUMBER")
 	private String number;
-
-	@Column(name = "ADDRESS_LATITUDE")
 	private Double latitude;
-
-	@Column(name = "ADDRESS_LONGITUDE")
 	private Double longitude;
 
 	public Long getId() {
@@ -244,7 +200,7 @@ public class Merchant {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Merchant other = (Merchant) obj;
+		MerchantDetailDto other = (MerchantDetailDto) obj;
 		if (averageTicket == null) {
 			if (other.averageTicket != null)
 				return false;
@@ -340,7 +296,7 @@ public class Merchant {
 
 	@Override
 	public String toString() {
-		return "Merchant [id=" + id + ", name=" + name + ", corporateName=" + corporateName + ", description="
+		return "MerchantDto [id=" + id + ", name=" + name + ", corporateName=" + corporateName + ", description="
 				+ description + ", averageTicket=" + averageTicket + ", exclusive=" + exclusive + ", type=" + type
 				+ ", status=" + status + ", createdAt=" + createdAt + ", country=" + country + ", state=" + state
 				+ ", city=" + city + ", postalCode=" + postalCode + ", district=" + district + ", street=" + street

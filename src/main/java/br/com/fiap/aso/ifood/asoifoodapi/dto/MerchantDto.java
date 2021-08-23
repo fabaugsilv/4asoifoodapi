@@ -2,22 +2,22 @@ package br.com.fiap.aso.ifood.asoifoodapi.dto;
 
 public class MerchantDto {
 
-	private Integer id;
+	private Long id;
 	private String name;
 	private String corporateName;
 
-	public MerchantDto(Integer id, String name, String corporateName) {
+	public MerchantDto(Long id, String name, String corporateName) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.corporateName = corporateName;
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
