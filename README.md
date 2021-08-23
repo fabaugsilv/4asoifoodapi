@@ -11,6 +11,7 @@ Turma 4ASOO - 2020/2021
 # Detalhes da API
  * Unicórnio Escolhido - IFood
  * API Referência - [https://developer.ifood.com.br/docs/references](https://developer.ifood.com.br/docs/references)
+ * Docker Hub - [https://hub.docker.com/r/fabaugsilv/4asoifoodapi/tags](https://hub.docker.com/r/fabaugsilv/4asoifoodapi/tags)
 
 ## Como usar?
  * mvn clean install
